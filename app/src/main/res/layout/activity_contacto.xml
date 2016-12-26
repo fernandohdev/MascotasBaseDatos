@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contacto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.curso.logotipo.ContactoActivity">
+
+    <include
+        android:id="@+id/miActionBar"
+        layout="@layout/action_bar"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miActionBar"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTACTO"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/etContactoNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contacto_nombre"
+            />
+
+        <EditText
+            android:id="@+id/etContactoCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contacto_correo"
+            />
+
+        <EditText
+            android:id="@+id/etContactoMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:gravity="top"
+            android:hint="@string/contacto_mensaje"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btnEnviarComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacto_boton_enviar"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
